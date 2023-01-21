@@ -5,21 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WD-BLOG</title>
     <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="format_tablet.css">
     <link rel="stylesheet" href="style-switcher.css">
     <link rel="stylesheet" href="color-1.css">
     <link rel="stylesheet" href="menus.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- style du switch -->
-    <link rel="stylesheet" href="color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="color-3.css" class="alternate-style" title="color-1" disabled>
     <link rel="stylesheet" href="color-2.css" class="alternate-style" title="color-2" disabled>
-    <link rel="stylesheet" href="color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="color-1.css" class="alternate-style" title="color-3" disabled>
     <link rel="stylesheet" href="color-4.css" class="alternate-style" title="color-4" disabled>
     <link rel="stylesheet" href="color-5.css" class="alternate-style" title="color-5" disabled>
 
 </head>
 <body >
   
-  <div class="menus_android">
+  <!-- <div class="menus_android">
 
     <input type="checkbox" id="chec">
     <label for="chec">
@@ -31,7 +32,7 @@
     
     <nav>
         <ul>
-            <!--<li><a href="#"></a></li>-->
+            <!--<li><a href="#"></a></li>
             <li><a href="#home" > Acceuil</a></li>
             <li><a href="#about">A propos</a></li>
             <li><a href="#service">Service</a></li>
@@ -40,7 +41,7 @@
            
         </ul>
     </nav>
-</div>
+</div> -->
 
   <!-- formation de mon menus pour format android -->
   <!-- <div class="espace"> 
@@ -61,8 +62,25 @@
 
 <!-- fin de mon menus android  -->
 
+
     <!-- ma barre de menus  version ordinateur -->
        <div class="main-container">
+
+        
+    <!-- barre de menus pour formar mobile et tablet  -->
+    <header>
+      <div class="format-tablet">
+        <div class="option-tablet">
+          <li>
+            <span class="petite-icone"></span>
+            <a href="#home">Acceuil</a></li>
+          <li><a href="#about">A propos</a></li>
+          <li><a href="#service">Services</a></li>
+          <li><a href="#portfolio">projets</a></li>
+          <li><a href="#contact">contact</a></li>
+        </div>
+      </div>
+    </header>
       
            <div class="aside">
               <div class="logo">
@@ -76,7 +94,7 @@
                 <li><a href="#home" class="active"><i class="fa fa-home"></i> Acceuil</a></li>
                 <li><a href="#about"><i class="fa fa-user"></i>A propos</a></li>
                 <li><a href="#service"><i class="fa fa-list"></i>Service</a></li>
-                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portofolio</a></li>
+                <li><a href="#portfolio"><i class="fa fa-briefcase"></i>projets</a></li>
                 <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
               </ul>
            </div>
@@ -100,8 +118,7 @@
                 </div>
               </section>
 
-
-
+           
              <section class="about section " id="about">
                <div class="container">
                 <div class="row">
@@ -156,13 +173,16 @@
                      </div>
                   </div> 
                   </div>
-                  
+                 
                   <div class="row">
+                    <div class="btn-cv">
                     <div class=" buttons padd-15">
-                      <a href="" class="btn">Telecharger Mon Cv</a>
+                      <a href="" class="btn Tcv">Telecharger Mon Cv</a>
                       <a href="#contact" class="btn hire-me">Me contacter</a>
                     </div>
-                   
+                  </div>  
+                </div> 
+                  
                   <div class="skills padd-15">
                     <div class="row">
                       <div class="skill-item padd-15">
@@ -209,7 +229,7 @@
                       <div class="skill-item padd-15">
                         <h5>photoshop</h5>
                         <div class="progress">
-                           <div class="progress-in" style="width:90%;"></div>
+                           <div class="progress-in" style="width:80%;"></div>
                            <div class="skill-percent">80%</div>
                         </div>
                       </div>
@@ -217,6 +237,14 @@
                     </div>
                   </div>
                 </div>
+                <div class="row">
+                  <div class="btn1-cv">
+                  <div class=" buttons padd-15">
+                    <a href="" class="btn">Telecharger Mon Cv</a>
+                    <a href="#contact" class="btn hire-me">Me contacter</a>
+                  </div>
+                </div>  
+              </div> 
               
 
                  <div class="row">
@@ -619,6 +647,9 @@
  
 
        </div>
+    
+
+
 
        <!-- changement de thème  -->
        <div class="style-switcher " id="style-switcher">

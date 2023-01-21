@@ -1,0 +1,44 @@
+.main-container {
+    
+}
+.format-tablet{
+    max-width: 80%;
+    margin-left: 15%;
+    margin-right: 15%;
+    height: auto;
+    background: #000;
+    position: static;
+    text-align: center;
+    position: static;
+    border-radius: 12%;
+  
+}
+.option-tablet{
+    flex-wrap: wrap;
+    justify-content: center;
+    display: flex;
+    color: var(--skin-color);
+
+}
+.option-tablet li{
+    border-radius: 50%;
+    background: #000;
+    margin: 35px;
+    list-style: none;
+}
+header{
+   
+    position:fixed;
+    margin-top: 540px;
+    cursor: pointer;
+    scroll-behavior: auto;
+    z-index: 1200;
+    width: 100%;
+    height: auto;
+   
+    border-radius: 12%;
+    text-align: center;
+
+    
+ }
+
