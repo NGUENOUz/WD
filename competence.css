@@ -1,0 +1,52 @@
+.competences {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4%;
+  }
+  
+  .competences h2{
+    color: var(--color1);
+
+  }
+  .competence {
+    width: 100%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .competence h3{
+    color: var(--color1);
+  }
+  
+  .progress-bar {
+    height: 15px;
+    background-color:var(--color1);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+  
+  .progress {
+    height: 100%;
+    background-color:var(--theme);
+    transition: width 0.6s ease;
+  }
+  
+  .progress-text {
+    position: relative;
+    top: -15px;
+    font-size: 12px;
+    color: white;
+  }
+  
+  @media screen and (min-width: 768px) {
+    .competences {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    
+    .competence {
+      width: calc(50% - 10px);
+    }
+  }

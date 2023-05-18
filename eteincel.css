@@ -1,0 +1,47 @@
+.sparkle {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: white;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+
+    animation: 1s linear infinite alternate couleur-contour,
+    1s linear infinite tour;
+    
+  }
+  @keyframes passage{
+    from {
+        box-shadow: 
+        0 -1px 0 rgb(18, 18, 250),
+        1px 0 0 rgb(248, 5, 5) ,
+        -1px 0 0 rgb(214, 123, 3),
+        0 1px 0 rgb(4, 201, 70)
+      }
+      to {
+        box-shadow: 
+        0 -1px 0 blue,
+        1px 0 0 rgb(248, 5, 175) ,
+        -1px 0 0 rgb(214, 89, 5),
+        0 1px 0 rgb(209, 243, 15) 
+      }
+  }
+  @keyframes tour{
+
+    from{
+        transform:rotate(0deg);
+        background: linear-gradient(to bottom, #12c1ec7e 0%, #9e9b9b4f 90%);
+    }
+    to{
+        transform: rotate(360deg);
+        background: linear-gradient(to bottom, #9aa0a17e 0%, #c83ce44f 90%);
+    }
+    
+    }
+  
+  .sparkle.active {
+    opacity: 1;
+  }

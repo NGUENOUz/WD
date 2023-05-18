@@ -1,0 +1,541 @@
+:root{
+    --fond1:rgb(7, 1, 14);
+    --color1:white;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body{
+    margin-left: 0;
+     background: var(--fond1);
+    margin-right: 0;
+    list-style: none;
+    
+}
+ul{
+  list-style: none;
+}
+a { text-decoration: none;
+    cursor: pointer;
+}
+
+
+/* styliation de ma barre de navigation */
+header{
+    position: fixed;
+    width: 100%;
+    height: 90px;
+    border-bottom: 1px solid var(--color1);
+    display: flex;
+    justify-content: space-between;
+    background: var(--fond1);
+    z-index: 100;
+}
+.logo img{
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+.menus {
+  width: 830px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    justify-content: center;
+    padding: 2%; 
+    
+    display: flex;
+     flex-direction:row ;
+    justify-content:space-between;
+   
+}
+.menus ul  {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  list-style: none;
+}
+.menus ul li{
+  padding: 4px;
+  margin-left:5% ;
+  cursor: pointer;
+}
+.menus ul li:hover{
+border: 1px solid white;
+transform: scale(1.2);
+transition: all ease 1s;
+box-shadow: 0 2px 2px 0 rgb(184, 180, 180);
+}
+.menus ul li:focus{
+  border: 1px solid white;
+  transform: scale(1.2);
+  transition: all ease 1s;
+  box-shadow: 0 2px 2px 0 rgb(184, 180, 180);
+}
+/* bouton qui permet d'activer les changements de theme */
+.settings-btn{
+  cursor: pointer;
+   width: 40px;
+   height: 40px;
+  animation: 10s linear infinite alternate couleur-contour,
+  10s linear infinite tour;
+  border-radius: 50%;
+
+  
+}
+@keyframes couleur-contour{
+  from {
+    box-shadow: 
+    0 -1px 0 rgb(18, 18, 250),
+    1px 0 0 rgb(248, 5, 5) ,
+    -1px 0 0 rgb(214, 123, 3),
+    0 1px 0 rgb(4, 201, 70)
+  }
+  to {
+    box-shadow: 
+    0 -1px 0 blue,
+    1px 0 0 rgb(248, 5, 175) ,
+    -1px 0 0 rgb(214, 89, 5),
+    0 1px 0 rgb(209, 243, 15) 
+  }
+}
+
+@keyframes tour{
+
+from{
+    transform:rotate(0deg);
+}
+to{
+    transform: rotate(360deg);
+}
+
+}
+
+/* fin de cette animation  */
+
+
+
+.swith-mode{
+  width:60px ;
+  height: 20px;
+  background: #f7f5f5;
+  border-radius: 12px;
+  text-align: center;
+  justify-content: center;
+  margin-right: 13%;
+
+}
+.cercle{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--fond1);
+}
+
+
+
+
+.bulles{
+ 
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+ 
+    background: linear-gradient(to bottom, #3399ff 0%, #ffffff 90%);
+}
+
+p{
+   text-align: center;
+   padding:30%;
+   color: white;
+   font-size: 22px;
+}
+
+
+
+/* stylisation de la section d'acceuil */
+
+.Acceuil{
+  width: 100vw;
+  height: 85vh;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  background: #ac2e2e;
+}
+.Acceuil .gauche p{
+  font-size: 40px;
+  margin-top: -10%;
+  margin-left: -18%;
+}
+
+.Acceuil .gauche span{
+  font-size: 50px;
+  color: rgb(236, 145, 8);
+}
+
+.Acceuil .gauche span:before {
+  content:'';
+  animation:animate infinite 12s;
+  }
+  @keyframes animate {
+      0%{
+          content:'Freelancer';
+      }
+  
+      20%{
+          content:'Developpeur Web';
+      }
+      40%{
+          content:'Marketeur';
+      }
+  
+      60%{
+          content:'youtubeur';
+      }
+  
+      80%{
+          content:'blogeur';
+      }
+  
+      100%{
+          content:'Freelancer';
+      }
+      
+  }
+
+
+
+
+
+.Acceuil .droite img{
+
+ width: 650px;
+ height: 750px;
+margin-top: -10%;
+
+}
+/* fin de la section d'aceuil */
+
+
+ /*    stylisation de la section de mon parcour */
+
+.parcour{
+  display: flex;
+}
+.parcour h1{
+  text-align: center;
+  font-size: 77PX;
+  margin-left: 12%;
+  padding: 4%;
+}
+.stroke-text{
+  color: transparent;
+  font-family: Arial, Helvetica, sans-serif;
+  -webkit-text-stroke-width:1px;
+  -webkit-text-stroke-color:white;
+}
+
+.box-parcour{
+  width: 100vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 12%;
+  margin-right: 12%;
+  background: #776161;
+}
+.box-parcour .bloc1,.block2{
+  max-width: 400px;
+  height: 500px;
+  margin: 3%;
+  border-radius: 12px;
+  box-shadow: 0 4px 4px 2px rgb(148, 145, 145);
+}
+/* stylisation de la rubrique a propos  */
+.propos{
+  background: #161616;
+
+}
+.propos-content{
+  display:flex;
+  margin-top: -8%;
+  justify-content: space-between;
+  color: white;
+  margin-bottom: -35%;
+}
+.propos .propos_title{
+  text-align: center;
+  padding: 3%;
+  font-size: 60px;
+}
+.propos_gauche .cercle-img{
+  width: 500px;
+  height: 500px;
+  z-index: 2;
+  border-radius: 50%;
+  background: rgb(5, 5, 5);
+  box-shadow: 4px 12px 12px 10px rgb(230, 146, 20);
+  margin-left: 6%;
+  transform: translateY(40%);
+  
+}
+.propos_gauche .rectangle_img{
+  width: 600px;
+  height: 100px;
+  background: #161616;
+  transform: translateY(-560%);
+
+ margin-left: 8%; 
+}
+.propos_gauche img{
+ 
+  transform: translateY(-94%);
+  width: 600px;
+  height: 600px;
+  z-index: 4;
+}
+.propos_droite{
+  margin-right: 8%;
+  font-size: 20px;
+ 
+}
+.propos_droite p{
+ 
+  padding-bottom: 2%;
+}
+
+.btn_cv{
+  width: 200px;
+  height: 40px;
+  background: #e7880c;
+  color: white;
+  text-align: center;
+  justify-content: center;
+  padding-top: 2%;
+  margin-top: 16%;
+  transform: translatey(-199%);
+  margin-left: 25%;
+}
+.btn_cv a{
+  color: white;
+  
+ 
+}
+/* fin de stylisation de la rubrique a propos  */
+
+/* stylisation de la section services  */
+.service_title{
+  color: white;
+  font-size: 60px;
+  text-align: center;
+   padding: 4%;
+}
+.bloc_services{
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 10%;
+}
+.box{
+  margin: 3%;
+  width: 300px;
+  height: 250px;
+  border-radius: 10px;
+  box-shadow: 0 4px 4px 0 rgba(221, 217, 217, 0.733);
+}
+/*  fin de la stylisation de la section services  */
+
+/* stylisation de la section des projets  */
+.box_project{
+  width: 90vw;
+  height: 90vh;
+  justify-content: center;
+  margin-left: 4%;
+  box-shadow: 4px 2px 2px 2px rgb(145, 140, 140);
+}
+.projet_descriptipon{
+  width: 200px;
+  height: 300px;
+  background-image:url(image/f);
+}
+/* fin de la stylisatoin de la section des projets  */
+@media(max-width:1010px){
+  .Acceuil{
+   
+  }
+  .Acceuil .gauche p{
+    font-size: 40px;
+    margin-top: -10%;
+    margin-left: -15%;
+  }
+  
+  .Acceuil .gauche span{
+    font-size: 40px;
+    
+  }
+
+}
+@media(max-width:950px){
+  .Acceuil .gauche p{
+    font-size: 30px;
+    margin-top: 30%;
+   
+    padding: 0;
+    margin-left: 17%;
+   
+  }
+  
+  .Acceuil .gauche span{
+    font-size: 30px;
+    
+  }
+
+}
+@media(max-width:950px){
+  .Acceuil .droite img{
+
+    width: 650px;
+    height: 750px;
+   margin-top: 6%;
+   padding-bottom: 12%;
+   
+   }
+  header{
+    height: 60px;
+  }
+  .logo{
+    margin-top: -2%;
+  }
+  .menus{
+    display: none;
+  }
+    .close{
+    background-image: url(image/close.png);
+      background-repeat: no-repeat;
+       
+    }
+
+    .trait_cacher{
+      transform: translateX(200px);
+    }
+
+  .bar-menus{
+    margin-top: 11%;
+    margin-left: 36%;
+    display: flex;
+    width: 140px;
+    height:80px;
+   flex-direction: column;
+   
+  
+  }
+   .bar-menus .bar1,.bar3{
+    width: 50px;
+    height: 8px;
+    margin-top: 4px;
+    background: #f3eded;
+    border-radius: 4px;
+  
+   }
+   .bar-menus .bar2{
+    width: 30px;
+    height: 6px;
+    margin-top: 4px;
+    background: #f3eded;
+    border-radius: 4px;
+    margin-left: 12%;
+   }
+
+   .bar_close{
+
+    background-image: url(./image/Close.png);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    
+    height: 35px;
+    margin-top: -55%; 
+    margin-left: 50%;
+    display: none;
+    
+   }
+  
+   /* .bar_close .bar4{
+    width: 150px;
+    height: 8px;
+    margin-top: 10px;
+    background: #f3eded;
+    border-radius: 4px;
+    rotate: 50deg;
+   }
+   .bar_close .bar5{
+    width: 150px;
+    height: 8px;
+
+    background: #f3eded;
+    border-radius: 4px;
+    rotate: -50deg;
+   }
+  */
+   .active_close{
+
+display: block;
+   }
+
+   .option-android{
+    position: fixed;
+    width: 0vw;
+    height: 100vh;
+    background:	#202020;
+    text-align: center;
+    color: var(--color1);
+    font-size: 30px;
+    padding-top: 20%;
+    z-index: 12;
+    transition:ease all 1s;
+    transform: translateX(-140px);
+    
+   }
+   .retour{
+    transform: translateX(0px);
+    width: 90vw;
+   }
+   .option-android ul li{
+    margin: 6%;
+    cursor: pointer;
+   
+   }
+   .option-android ul li:hover{
+    border: 1px solid white;
+    }
+    .option-android ul li:focus{
+      transition: ease all 1s;
+      transform: scale(1.2);
+    }
+  }
+  @media(max-width:1280px){
+    .Acceuil .droite img{
+
+      width: 750px;
+      height: 750px;
+     margin-top: 4%;
+     padding-bottom: 12%;
+
+     
+     }
+     .Acceuil .gauche p{
+      font-size: 55px;
+      margin-top: 30%;
+     
+      padding: 0;
+      margin-left: 17%;
+     
+    }
+    
+    .Acceuil .gauche span{
+      font-size: 55px;
+      
+    }
+  }

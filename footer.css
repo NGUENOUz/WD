@@ -1,0 +1,45 @@
+footer{
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    
+}
+.network{
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+    margin-top: -350%;
+    margin-left: 45%;
+
+}
+.network img{
+    width: 100px;
+    height: 100px;
+}
+.network-title{
+    font-size: 40px;
+    font-family: 'cooper';
+    margin-left: -89%;
+    margin-top: -40%;
+}
+.network-title p{
+    font-size: 30px;
+    font-family: 'cooper';
+rotate:90deg;
+}
+.logo-footer img{
+    margin-top: -70%;
+    width: 400px;
+    height: 300px;
+}
+.generaux{
+  
+    width: 300px;
+    height: auto;
+    border: 1px solid white;
+}
+.copy  {
+    margin-top: -80%;
+}
