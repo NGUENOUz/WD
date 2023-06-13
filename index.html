@@ -12,9 +12,24 @@
     <link rel="stylesheet" href="projets.css">
     <link rel="stylesheet" href="contact.css">
     <link rel="stylesheet" href="responsive-home.css">
+    <link rel="stylesheet" href="style-switcher.css">
+
+    <!-- couleurs du theme  -->
+    <link rel="stylesheet" href="color-3.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="color-1.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="color-5.css" class="alternate-style" title="color-5" disabled>
+
+
+
+
+
     <script src="index.js" defer></script>
     <script src="eteincel.js" defer></script>
     <script src="transBulle.js" defer></script>
+    <script src="style-swither.js" defer></script>
+    <script src="menus.js" defer></script>
 
     <link rel="stylesheet" href="../../assets/vendor/aos/dist/aos.css">
 </head>
@@ -31,9 +46,9 @@
               <li><a href="#Acceuil">Home</a></li>
               <li><a href="#parcour">About</a></li>
               <li><a href="#Services">Services</a></li>
-                <li>My Project</li>
-                <li>My skill</li>
-                <li>Contact</li>
+              <li><a href="#projet"> My Project</a></li>
+              <li><a href="#competence"> My skill</a></li>
+              <li><a href="#contact"> Contact</a></li>
                     
             </ul>
             
@@ -73,13 +88,14 @@
     </header>
 
 
-    <div class="option-android">
+    <div class="option-android" id="options">
      
       <ul>
-        <li><a href="#Acceuil">Home</a></li>
-        <li><a href="#parcour">About</a> </li>
-        <li>My Project</li>
-        <li>My skill</li>
+        <li><a href="#Acceuil" id="acceuil_mobile" class="menu-mobile" >Home</a></li>
+        <li><a href="#parcour" id="acceuil_mobile" class="menu-mobile" >About</a> </li>
+        <li><a href="#projet" id="acceuil_mobile" class="menu-mobile" > My Project</a></li>
+        <li><a href="#competence" id="acceuil_mobile"  class="menu-mobile" > My skill</a></li>
+        <li><a href="#contact"id="acceuil_mobile"  class="menu-mobile" > Contact</a></li>
         
             
     </ul>
@@ -138,7 +154,7 @@
 
               <div class="rectangle_img">
                 <div class="btn_cv">
-                  <a download="image/apk.png">Telecharger Mon cv</a>
+                  <a href="image/cv.pdf" download="Mon cv ">Telecharger Mon cv</a>
                  </div>
               </div>
 
@@ -169,7 +185,7 @@
         </div>
       </div>
      </div>
-    </section>
+    </section> 
 
     <section class="Services "id="services">
        <h1 class="service_title">Mes services</h1>
@@ -220,7 +236,7 @@
  
     <div class="sparkle"></div>
 
-    <section class="projets">
+    <section class="projets" id="projet">
 
 
 
@@ -334,11 +350,16 @@
 
     </div>
 
-    </section>
+    </section> 
 
-    <h1 class="service_title">Mes compétences </h1>
-    <section class="competences">
- 
+    <section id="competence">
+
+    <div class="section-title padd-15">
+      <h2 id="competence-title">Mes competences</h2>
+    </div>
+
+    <div class="competences" >
+      
       <div class="competence">
         <h3>HTML</h3>
         <div class="progress-bar">
@@ -396,12 +417,14 @@
           </div>
         </div>
       </div>
-    </section>
+    </div>
+   </section>  
+    
 
 
 
 
-
+<!-- 
    <section class="contact">
 
     <h1 class="service_title">Contact</h1>
@@ -437,9 +460,141 @@
     </div>
      
 
-   </section>
+   </section>  -->
+ 
+     <section class="contact section"id="contact">
+        <div class="container">
+        <div class="row">
+          <div class="section-title padd-15">
+            <h2>Contact</h2>
+          </div>
+        </div>
 
-<footer>
+
+      
+         <div class="cercle-3d" id="#cercle3d">
+          <div class="fond-cercle"></div>
+          <div class="semi-cercle"></div>
+        </div> 
+
+
+
+
+          <h3 class="contact-title padd-15">Vous avez des questions ?</h3>
+          <h4 class="contact-sub-title padd-15">Je suis à votre disposition </h4>
+          <div class="row">
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-phone"></i></div>
+              <h4>Contactez nous au  </h4>
+              <p>+237 678378976</p>
+            </div>
+
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-map-marker-alt"></i></div>
+              <h4> Adresse</h4>
+              <p class="Txt-ville">Douala,cameroun</p>
+            </div>
+
+            <div class="contact-info-item padd-15">
+              <div class="icon"><i class="fa fa-envelope"></i></div>
+              <h4> Email</h4>
+               <p class="Txt-mail">Wilfrieddzomeu90@gmail.com</p> 
+            </div>
+          </div>
+
+
+
+
+
+          
+          <h3 class="contact-title padd-15">Envoyez moi un mail </h3>
+          <h4 class="contact-sub-title padd-15">Je répond immediatement </h4>
+
+          <div class="row">
+            <div class="contact-form  padd-15">
+              <div class="row">
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="text "class="form-control input1" placeholder="Nom">
+                  </div>
+                </div>
+
+                <div class="form2">
+                  <input type="text" placeholder="Nom" class="form-control form-item col-12 padd-15">
+                  <input type="text" placeholder="Email" class="form-control form-item col-12 padd-15">
+                  
+                </div>
+
+                <div class="form-item col-6 padd-15">
+                  <div class="form-group">
+                    <input type="email"class="form-control input2" placeholder="Email">
+                  </div>
+                </div>
+              </div> 
+
+
+            <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <input type="text "class="form-control" placeholder="Subject">
+                  </div>
+                </div>
+
+               </div> 
+ 
+              
+
+                <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <div class="form-group">
+                    <textarea type="text "class="form-control" placeholder="MEssage">Message </textarea>
+                  </div>
+                </div>
+
+               </div>
+              
+
+               <div class="row">
+                <div class="form-item col-12 padd-15">
+                  <button type="submit" class="btn">Send Message</button>
+                </div>
+
+               </div> 
+
+
+            </div>
+          </div>
+          </div>
+        
+       </section>  
+
+
+
+
+
+<!-- Changeùent des couleurs  -->
+<!-- 
+       <div class="style-switcher " id="style-switcher">
+        <div class="style-swither-toggler s-icon" id="style-swither-toggler">
+          <i class="fas fa-cog fa-spin"></i>
+        </div>
+        <div class="day-night s-icon">
+          <i class="fas "></i>
+        </div>
+        <h4>Couleur de theme</h4>
+        <div class="colors">
+          <span class="color-1 col1" ></span>
+          <span class="color-2 col2" ></span>
+          <span class="color-3 col3"></span>
+          <span class="color-4 col4"></span>
+          <span class="color-5 col5"></span>
+        </div>
+       </div> -->
+
+
+
+
+<!-- <footer>
   <div class="network-title">
     <p >Mes  reseaux</p>
   </div>
@@ -463,9 +618,22 @@
   </div>
 
   <div class="copy">
-    <p><span>Wilfried dzomzeu </span> all right reserved</p>
+    <p><span>Wilfried dzomzeu  </span>   
+   all right reserved</p>
   </div>
-</footer>
+  <div class="letter">
+   
+    <span class="pub-letter">Inscrivez vous a ma newsletter pour ne ratter aucune de mes publications </span>
+    <div class="news">
+    
+      <input type="text" class="input-news" placeholder="Email">
+      <div class="btn-news">
+        <button>Valider</button>
+      </div>
+    </div>
+  </div>
+
+</footer> -->
     <script>
       $(document).on('ready', function () {
         // initialization of aos

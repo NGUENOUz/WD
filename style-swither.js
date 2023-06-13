@@ -45,3 +45,9 @@ window.addEventListener("load",()=>{
     else
     dayNight.querySelector("i").classList.add("fa-moon"); 
 })
+
+
+const icone=document.getElementById("icone");
+icone.addEventListener('click',function(){
+
+})

@@ -2,6 +2,7 @@
    
   
   {
+    
     .Acceuil {
         height: 95%;
         justify-content: center;
@@ -37,14 +38,14 @@
    .propos_gauche .cercle-img{
     width: 300px;
     height: 300px;
-    margin-left: 12%;
+    margin-left: 8%;
    }
    .propos_gauche .rectangle_img{
     width: 450px;
     margin-top: 40%;
    }
    .propos_gauche img{
-    margin-left: 5%;
+    margin-left: 2%;
     width: 395px;
     height: 400px;
    }
@@ -61,15 +62,66 @@
    }
    .Services{
     margin-top: 8%;
+
    }
   }
+  
   
 
 
   @media (max-width:375px) {
+
+   .cercle-3d{
+    display: flex;
+    transform: translateX(-900px);
+
+    
+   }
+
+ .Txt-mail{
+    transform: translateX(-115px);
+ }
+ .Txt-ville{
+    transform: translateX(-50px);
+ }
+  
+ .col-6{
+    display: none;
+ }
+
+ .form2{
+    display: block;
+ }
+ .form2 input{
+    width: 140%;
+    border-radius: 12px;
+ }
+ 
+
+
+   .fond-cercle{
+    
+    transform: translateY(290px);
+    width: 70px;
+    height: 70px;
+    box-shadow: 12px 12px 190px 32px var(--theme);
+  }
+  .semi-cercle{
+    display: none;
+  }
+   
+
+
+    header{
+        max-width: 100%;
+    }
+
+    .Acceuil .gauche p{
+font-size: 40;
+    }
     .propos .propos_title{
-  font-size: 40px;
-  margin-left: -10%;
+  font-size: 35px;
+  margin-left: 6%;
   margin-right: 12%;
   font-family: 'cooper';
   text-align: center;
@@ -78,17 +130,45 @@
  
  .propos_droite{
     margin-top: -145%;
-    padding: 10%;
-    padding-right: 10%;
-    margin-left: -2%;
-    margin-right: 6% ;
+    margin-top: -145%;
+    padding: 6%;
+    padding-right: 6%;
+    margin-left: 5%;
+    margin-right: 4% ;
+    }
+    .propos_droite p{
+        margin-left: 60%;
     }
     .propos_gauche{
-        margin-right: 32%;
+      
+       max-width: 100%;
+    }
+    .cercle-img{
+        
+        max-width: 250px;
+    }
+    .propos_gauche img{
+        max-width: 90%;
     }
     .propos_gauche .rectangle_img{
-        width: 450px;
-        margin-top: 60%;
+        max-width: 310px;
+        justify-content: center;
+        align-items: center;
+        background: var(--fond1);
+        margin-top: 40%;
+        margin-left: -10px;
+       
+        max-height: 40%;
+       }
+
+       .btn_cv{
+        height: 40px;
+        margin-left: 70px;
+       }
+
+       .blog-projets{
+        transform: translateX(-20px);
+      
        }
 
        .bloc_services{
@@ -104,13 +184,15 @@
         border-radius: 10px;
         box-shadow: 0 8px 8px 0 rgba(34, 33, 33, 0.733);
       }
+
+ 
         
 } 
 
 @media (max-width:360px) {
     .propos_droite{
         margin-top: -145%;
-        padding: 10%;
+        padding: 20%;
         padding-right: 13%;
         margin-left: -2%;
         margin-right: 9% ;
@@ -133,9 +215,8 @@
     .propos_droite{
         margin-top: -145%;
         padding: 10%;
-        padding-right: 16%;
-        margin-left: -2%;
-        margin-right: 14% ;
+       
+      
         }
 
         .logo img{
@@ -153,4 +234,7 @@
             justify-content: center;
            } 
 
+           .propos_gauche{
+            margin-right: 55%;
+        }
 }
